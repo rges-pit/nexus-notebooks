@@ -1,7 +1,6 @@
 name: rges-pit-dc
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python=3.11
   - numpy==1.26.0
@@ -25,9 +24,8 @@ dependencies:
   - lxml
   - s3fs
   - tqdm
-  - pathos
-  - microlens_submit>=0.16.4
   - huggingface_hub
+  - microlens-submit>=0.16.4
   - pip
   - pip:
     - BAGLE
