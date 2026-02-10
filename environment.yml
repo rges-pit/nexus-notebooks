@@ -24,6 +24,8 @@ dependencies:
   - lxml
   - s3fs
   - tqdm
+  - docutils
+  - markdownify
   - huggingface_hub
   - microlens-submit>=0.17.0
   - pip
