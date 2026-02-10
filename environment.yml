@@ -27,7 +27,7 @@ dependencies:
   - docutils
   - markdownify
   - huggingface_hub
-  - microlens-submit>=0.17.0
+  - microlens-submit>=0.17.6
   - pip
   - pip:
     - BAGLE
