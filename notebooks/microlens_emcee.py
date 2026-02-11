@@ -377,7 +377,7 @@ class micro_mc:
         
         return eff_sizes
 
-    def plot_corner_mcmc(self, samples=None, param_names=None, title="MCMC Posterior Distributions"):
+    def plot_corner_mcmc(self, samples=None, param_names=None, title="MCMC Posterior Distributions", show_titles=True):
         """
         Plot corner plot of MCMC samples
         
@@ -389,6 +389,8 @@ class micro_mc:
             Parameter names. If None, uses self.results['free_param_names']
         title : str, optional
             Plot title
+        show_titles : bool, optional
+            Whether to show parameter titles with quantiles (default: True)
         
         Returns
         -------
@@ -403,7 +405,7 @@ class micro_mc:
         
         fig = corner.corner(samples, labels=param_names, 
                            quantiles=[0.16, 0.5, 0.84],
-                           show_titles=True, title_kwargs={"fontsize": 12},
+                           show_titles=show_titles, title_kwargs={"fontsize": 12},
                            label_kwargs={"fontsize": 14})
         
         plt.suptitle(title, fontsize=16, y=0.98)
@@ -568,7 +570,7 @@ class micro_mc:
 
     def perform_mcmc_analysis(self, steps=3000, walkers=50, 
                              step_scale=1e-4, param_scales=None,
-                             verbose=False, plot_corner=False, plot_fit=False, 
+                             verbose=False, plot_corner=False, show_titles=True, plot_fit=False, 
                              plot_traces=False, plot_convergence=False, n_threads=None):
         """
         Perform complete MCMC analysis of binary lens model
@@ -780,7 +782,7 @@ class micro_mc:
         
         # Generate plots if requested
         if plot_corner:
-            self.plot_corner_mcmc(samples, free_param_names)
+            self.plot_corner_mcmc(samples, free_param_names, show_titles=show_titles)
         
         if plot_fit:
             self.plot_mcmc_fit(mle_params, self.param_names, mle_delta_chi2)
