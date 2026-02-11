@@ -377,7 +377,7 @@ class micro_mc:
         
         return eff_sizes
 
-    def plot_corner_mcmc(self, samples=None, param_names=None, title="MCMC Posterior Distributions", show_titles=True):
+    def plot_corner_mcmc(self, samples=None, param_names=None, title="MCMC Posterior Distributions", show_titles=True, **kwargs):
         """
         Plot corner plot of MCMC samples
         
@@ -391,6 +391,8 @@ class micro_mc:
             Plot title
         show_titles : bool, optional
             Whether to show parameter titles with quantiles (default: True)
+        **kwargs : dict
+            Additional arguments passed to corner.corner
         
         Returns
         -------
@@ -406,7 +408,7 @@ class micro_mc:
         fig = corner.corner(samples, labels=param_names, 
                            quantiles=[0.16, 0.5, 0.84],
                            show_titles=show_titles, title_kwargs={"fontsize": 12},
-                           label_kwargs={"fontsize": 14})
+                           label_kwargs={"fontsize": 14}, **kwargs)
         
         plt.suptitle(title, fontsize=16, y=0.98)
         plt.tight_layout()
@@ -571,7 +573,7 @@ class micro_mc:
     def perform_mcmc_analysis(self, steps=3000, walkers=50, 
                              step_scale=1e-4, param_scales=None,
                              verbose=False, plot_corner=False, show_titles=True, plot_fit=False, 
-                             plot_traces=False, plot_convergence=False, n_threads=None):
+                             plot_traces=False, plot_convergence=False, n_threads=None, **kwargs):
         """
         Perform complete MCMC analysis of binary lens model
         
@@ -782,7 +784,7 @@ class micro_mc:
         
         # Generate plots if requested
         if plot_corner:
-            self.plot_corner_mcmc(samples, free_param_names, show_titles=show_titles)
+            self.plot_corner_mcmc(samples, free_param_names, show_titles=show_titles, **kwargs)
         
         if plot_fit:
             self.plot_mcmc_fit(mle_params, self.param_names, mle_delta_chi2)
