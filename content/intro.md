@@ -139,11 +139,11 @@ To create a team, put in a request with the [Nexus helpdesk](https://stsci.servi
 
 ### Shared files
 
-Team storage can be accessed through `~/teams/<your team name>/` (see [`teams.md`](~/references/roman_notebooks/markdown/teams.md); [external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/teams.md)).
+Team storage can be accessed through `~/teams/<your team name>/` (see [`teams.md`](../../roman_notebooks/markdown/teams.md); [external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/teams.md)).
 
 ## Environments
 
-There is robust documentation on creating environments on the Nexus, in [`software.md`](~/references/roman_notebooks/markdown/software.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/software.md)), which you can reach by clicking the "Installing extra software" link on the welcome page.
+There is robust documentation on creating environments on the Nexus, in [`software.md`](../..//roman_notebooks/markdown/software.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/software.md)), which you can reach by clicking the "Installing extra software" link on the welcome page.
 
 **TL;DR**
 Environments are created, listed, activated, exported, and removed using:
@@ -210,13 +210,13 @@ A comprehensive tutorial notebook is available here and in the `microlens-submit
 
 ## Nexus notebook content
 
-The Nexus JupyterLab session comes preloaded with useful pages and notebooks. These live inside the `reference/` directory. [`tutorials.md`](~/reference/roman_noteboks/markdown/tutorials.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/tutorials.md)) lists all the reference notebooks and links to access them.
+The Nexus JupyterLab session comes preloaded with useful pages and notebooks. These live inside the `reference/` directory. [`tutorials.md`](../../roman_noteboks/markdown/tutorials.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/tutorials.md)) lists all the reference notebooks and links to access them.
 
 | Note: |
 | :- |
 | The notebooks in this directory are read-only, but the file system itself is not, so the reference notebooks can execute. You should not create or save notebooks in this directory. It is regularly replaced with the contents of its source repository, and any changes you make here will be lost. |
 
-In the notebook directory (`notebooks/microlensing-data-challenge/`) you will find the aforementioned notebooks and additional environment files ([`env.yaml`](https://raw.githubusercontent.com/rges-pit/data-challenge-notebooks/refs/heads/main/env.yml) and [`requirements.txt`](https://raw.githubusercontent.com/rges-pit/data-challenge-notebooks/refs/heads/main/requirements.txt)). Included in these environment files are the dependencies for the notebooks and packages we anticipate you may need for the data challenge.
+In the notebook directory you will find the aforementioned notebooks and additional environment files ([`env.yaml`](https://raw.githubusercontent.com/rges-pit/data-challenge-notebooks/refs/heads/main/env.yml) and [`requirements.txt`](https://raw.githubusercontent.com/rges-pit/data-challenge-notebooks/refs/heads/main/requirements.txt)). Included in these environment files are the dependencies for the notebooks and packages we anticipate you may need for the data challenge.
 
 ### Using the Environment Files
 
@@ -226,7 +226,7 @@ You should not need to use the provided environment file; you only need to selec
 
 Included here is a series of notebook meant to assist you in your data challenge journey. Relevant notebooks are:
 
-  * Data challenge workflow and creating data challenge submissions [(`~/reference/content/notebooks/rmdc2025_workflow/rmdc2025_workflow.ipynb`)](~/references/nexus-notebooks/notebooks/a_rmdc26_workflow.ipynb).
+  * Data challenge workflow and creating data challenge submissions [(`~/reference/content/notebooks/rmdc2025_workflow.ipynb`)](../notebooks/a_rmdc26_workflow.ipynb).
 
     <!-- start buttons -->
     <div style="display: flex; gap: 10px; margin: 1em 0; align-items: center;">
@@ -256,7 +256,7 @@ Included here is a series of notebook meant to assist you in your data challenge
     </div>
     <!-- end buttons -->
 
-  * Alternate workflow with the submission command line tool, for non-Python users. [(`~/references/nexus-notebooks/notebooks/x_microlens-submit_cli_tutorial.ipynb`)](`~/references/nexus-notebooks/notebooks/x_microlens-submit_CLI_tutorial.ipynb`)
+  * Alternate workflow with the submission command line tool, for non-Python users. [(`~/references/nexus-notebooks/notebooks/x_microlens-submit_cli_tutorial.ipynb`)](`../notebooks/x_microlens-submit_CLI_tutorial.ipynb`)
 
     <!-- start buttons -->
     <div style="display: flex; gap: 10px; margin: 1em 0; align-items: center;">
@@ -284,7 +284,7 @@ Included here is a series of notebook meant to assist you in your data challenge
       </a>
     </div>
   
-  * Single lens fitting & pipelined full-season demonstration [(`~/references/nexus-notebooks/notebooks/b_single_lens.ipynb`)](~/references/nexus-notebooks/notebooks/b_single_lens.ipynb)
+  * Single lens fitting & pipelined full-season demonstration [(`~/references/nexus-notebooks/notebooks/b_single_lens.ipynb`)](../notebooks/b_single_lens.ipynb)
 
     <!-- start buttons -->
     <div style="display: flex; gap: 10px; margin: 1em 0; align-items: center;">
@@ -316,7 +316,7 @@ Included here is a series of notebook meant to assist you in your data challenge
     <a href="https://colab.research.google.com/github/rges-pit/data-challenge-notebooks/blob/main/AAS%20Workshop/Session%20B:%20Single%20Lens%20%26%20Pipelines/Single_Lens_Pipeline.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
     <!-- end buttons -->
 
-  * Binary lens fitting approaches [(`~/references/nexus-notebooks/notebooks/c_binary_lens.ipynb`)](~/references/nexus-notebooks/notebooks/c_binary_lens.ipynb)
+  * Binary lens fitting approaches [(`~/references/nexus-notebooks/notebooks/c_binary_lens.ipynb`)](../notebooks/c_binary_lens.ipynb)
 
     <!-- start buttons -->
     <div style="display: flex; gap: 10px; margin: 1em 0; align-items: center;">
@@ -348,7 +348,7 @@ Included here is a series of notebook meant to assist you in your data challenge
     <a href="https://colab.research.google.com/github/rges-pit/data-challenge-notebooks/blob/main/AAS%20Workshop/Session%20C:%20Binary%20Lens/Fitting_Binary_Lenses.ipynb" target="_blank" rel="noopener"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
     <!-- end buttons -->
 
-  * Microlensing open-source tool demonstrations [(`~/references/nexus-notebooks/notebooks/x_microlensing_tools.ipynb`)](~/references/nexus-notebooks/notebooks/x_microlensing_tools_.ipynb)
+  * Microlensing open-source tool demonstrations [(`~/references/nexus-notebooks/notebooks/x_microlensing_tools.ipynb`)](../notebooks/x_microlensing_tools.ipynb)
 
     <!-- start buttons -->
     <div style="display: flex; gap: 10px; margin: 1em 0; align-items: center;">
