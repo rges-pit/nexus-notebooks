@@ -210,7 +210,7 @@ A comprehensive tutorial notebook is available here and in the `microlens-submit
 
 ## Nexus notebook content
 
-The Nexus JupyterLab session comes preloaded with useful pages and notebooks. These live inside the `reference/` directory. [`tutorials.md`](../../roman_noteboks/markdown/tutorials.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/tutorials.md)) lists all the reference notebooks and links to access them.
+The Nexus JupyterLab session comes preloaded with useful pages and notebooks. These live inside the `reference/` directory. [`tutorials.md`](../../roman_notebooks/markdown/tutorials.md) ([external link](https://github.com/spacetelescope/roman_notebooks/blob/main/markdown/tutorials.md)) lists all the reference notebooks and links to access them.
 
 | Note: |
 | :- |
